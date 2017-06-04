@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<p><center>COMPILER DESIGN AND IMPLEMENTATION</center></p>
+	<title>COMPILER DESIGN</title>
+</head>
+<body bgcolor="lightblue">
+<font color ="green"><b>
+
+<center> The implemented compiler is designed to accept certain parameters in to the computer's memory, process the input and produce the output of the process <br/>
+<hr/>
+<a href="cradle4.pas"> compiler</a>
+<hr/>
+<hr/>
+<p> <font color="red"><i> <ins>arithmetic operations: multiplication and division</font></ins></i></p>
+The compiler should allow the implied operator precedence or hierarchy associated expressions like: 7 + 4 * 6,<br/> the operation must start with multiplication then be followed by addition.<br/> With the rules of the pop and push of the stack.
+The BNF of the operations is written by < expression>::= < term>[< mulop>< term>]*
+<hr/>
+<p> <font color="red"><i><ins> general expressions </font></ins></i></p>
+The expression is able to handle any degree of complexity or any number of terms,<br/> and it makes the incremental approach possible.<br/> The BNF of the expression is written by < expression>::=< term>[< mulop>< term>]*
+<hr/>
+<p> <font color="red"><i><ins> stack </font></ins></i></p>
+The parenthesis forces addition before multiplication, and give us a mechanism for defining expressions of any degree of complexity.<br/> The BNF explaining the parenthesis notation is written by < factor> ::= (< expression>).<br/>
+This is where the recursion comes in where an expression can contain a factor which contains another expression which contains a factor.<br/>The stack enables us to know the memory number at which the data is stored.<br/>
+Example : if we put 7 in D1 the next number goes to the next memory is which is D2.<br/> The solution of pushing the data in to the stack is written by –(SP) and for popping is written by (SP)+
+<hr/> <font color="blue"><i>
+The compiler is hosted on github and left as an open source for everyone to be able to edit it </font>
+</center></font>
+</b>
+</body>
+</html>
